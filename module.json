@@ -1,7 +1,7 @@
 {
   "name": "mbed-hal",
   "version": "0.6.4",
-  "description": "mbed low-level Hardware Abstraction Layer",
+  "description": "mbed low-level Hardware Abstraction Layer (AST version)",
   "keywords": [
     "mbed",
     "HAL"
@@ -27,7 +27,7 @@
       "mbed-hal-freescale": "~0.5.0"
     },
     "st": {
-      "mbed-hal-st": "~0.5.0"
+      "mbed-hal-st": "*"
     },
     "nordic": {
       "mbed-hal-nordic": "~0.0.1"
