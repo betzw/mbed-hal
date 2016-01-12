@@ -70,12 +70,13 @@ extern "C" {
  * Configures the pins used by I2S, sets a default format and frequency, and enables the peripheral
  * @param[out] obj  The I2S object to initialize
  * @param[in]  data I2S data input/output pin
- * @param[in]  sclk I2S Clock output pin
+ * @param[in]  sclk I2S clock output pin
  * @param[in]  wsel I2S word select output pin (might be NC for PDM sources)
  * @param[in]  fdpx I2S data input pin (for full-duplex operation, default = NC)
+ * @param[in]  mclk I2S master clock output pin (default = NC, enables master clock output when not NC)
  * @param[in]  mode I2S mode to be applied
  */
-void i2s_init(i2s_t *obj, PinName data, PinName sclk, PinName wsel, PinName fdpx, i2s_mode_t mode);
+void i2s_init(i2s_t *obj, PinName data, PinName sclk, PinName wsel, PinName fdpx, PinName mclk, i2s_mode_t mode);
 
 /** Release a I2S object
  *
