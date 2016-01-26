@@ -156,7 +156,7 @@ uint8_t i2s_get_module(i2s_t *obj);
  * @param[in] handler_tx I2S tx interrupt handler
  * @param[in] handler_rx I2S rx interrupt handler
  */
-void i2s_master_transfer(i2s_t *obj, void *tx, size_t tx_length, void *rx, size_t rx_length, 
+void i2s_transfer(i2s_t *obj, void *tx, size_t tx_length, void *rx, size_t rx_length,
 			 bool circular,
 			 uint32_t handler_tx, uint32_t handler_rx, 
 			 uint32_t event);
