@@ -47,6 +47,13 @@ typedef enum {
 	MASTER_RX
 } i2s_mode_t;
 
+typedef enum {
+	LOW,
+	MEDIUM,
+	HIGH,
+	URGENT
+} i2s_dma_prio_t;
+
 /** Asynch I2S HAL structure
  */
 typedef struct {
@@ -157,7 +164,7 @@ uint8_t i2s_get_module(i2s_t *obj);
  * @param[in] handler_rx I2S rx interrupt handler
  */
 void i2s_transfer(i2s_t *obj, void *tx, size_t tx_length, void *rx, size_t rx_length,
-			 bool circular,
+			 bool circular, i2s_dma_prio_t prio,
 			 uint32_t handler_tx, uint32_t handler_rx, 
 			 uint32_t event);
 
