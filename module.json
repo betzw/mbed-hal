@@ -1,6 +1,6 @@
 {
   "name": "mbed-hal",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "mbed low-level Hardware Abstraction Layer",
   "keywords": [
     "mbed",
@@ -35,6 +35,15 @@
     },
     "cordio": {
       "mbed-hal-cordio": "~0.0.5"
+    },
+    "nuvoton": {
+      "mbed-hal-nuvoton": "^1.0.0"
+    },
+    "nxp": {
+      "mbed-hal-nxp": "~0.1.0"
+    },
+    "arm-ssg": {
+      "mbed-hal-arm-ssg": "^1.0.0"
     }
   }
 }
