@@ -27,11 +27,6 @@
 #define I2S_TX_EVENT				(0x0) // see DMA_TX
 #define I2S_RX_EVENT				(0x1) // see DMA_RX
 
-#define I2S_EVENT_RX(x)             (((x) & 0xFF) != 0x0)
-#define I2S_EVENT_TX(x)             (((x) & 0xFF00) != 0x0)
-
-#define I2S_FILL_WORD              (0xFFFFFFFF)
-
 typedef enum {
 	PHILIPS,
 	MSB,
